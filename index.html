@@ -20,11 +20,12 @@
   </head>
   <body>
     <div class="container">
+      <!-------------Side bar------------->
       <aside>
         <div class="top">
           <div class="logo">
             <img src="./assets/images/logo.png" alt="logo" />
-            <h2>EGA <span class="danger">TOR</span></h2>
+            <h2>CO <span class="danger">DEX</span></h2>
           </div>
           <div class="close" id="close-btn">
             <span> <i class="bx bx-strategy"></i> </span>
@@ -32,7 +33,7 @@
         </div>
 
         <div class="sidebar">
-          <a href="#">
+          <a href="#" class="active">
             <span><i class="bx bx-grid-9"></i> </span>
             <h3>Dashboard</h3>
           </a>
@@ -65,8 +66,84 @@
             <span><i class="bx bx-plus"></i> </span>
             <h3>Add Product</h3>
           </a>
+
+          <a href="#">
+            <span><i class="bx bx-arrow-out-up-right-stroke-circle"></i> </span>
+            <h3>Log Out</h3>
+          </a>
         </div>
       </aside>
+      <!---------------End of side bar ----->
+      <main>
+        <h1>Dashboard</h1>
+        <div class="date">
+          <input type="date" name="date" id="date" />
+        </div>
+        <div class="insights">
+          <!----------Start of sales---------->
+          <div class="sales">
+            <span><i class="bx bx-chart-spline"></i> </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>$25,345</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+              <small class="text-muted"> Last 24 hours </small>
+            </div>
+          </div>
+          <!----------End of sales---------->
+
+          <!----------Start of expenses---------->
+          <div class="expenses">
+            <span><i class="bx bx-wallet-note"></i> </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Expenses</h3>
+                <h1>$16,745</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+              <small class="text-muted"> Last 24 hours </small>
+            </div>
+          </div>
+          <!----------End of expenses---------->
+
+          <!----------Start of income---------->
+          <div class="income">
+            <span><i class="bx bx-print-dollar"></i> </span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Income</h3>
+                <h1>$13,454</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="38" cy="38" r="36"></circle>
+                </svg>
+                <div class="number">
+                  <p>81%</p>
+                </div>
+              </div>
+              <small class="text-muted"> Last 24 hours </small>
+            </div>
+          </div>
+          <!----------End of income---------->
+        </div>
+      </main>
     </div>
 
     <script type="module">
