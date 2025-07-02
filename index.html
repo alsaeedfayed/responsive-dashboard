@@ -3,7 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>responsive dashboard</title>
+    <!-- Styles-->
+    <link rel="stylesheet" href="./styles.css" />
+    <!--Box icons-->
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--Roboto google font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./assets/images/logo.png" alt="logo" />
+            <h2>EGA <span class="danger">TOR</span></h2>
+          </div>
+          <div class="close" id="close-btn">
+            <span> <i class="bx bx-strategy"></i> </span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#">
+            <span><i class="bx bx-grid-9"></i> </span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="#">
+            <span><i class="bx bx-user"></i> </span>
+            <h3>Customers</h3>
+          </a>
+          <a href="#">
+            <span><i class="bx bx-list-ol"></i> </span>
+            <h3>Orders</h3>
+          </a>
+          <a href="#">
+            <span><i class="bx bx-chart-trend"></i> </span>
+            <h3>Analysis</h3>
+          </a>
+          <a href="#">
+            <span><i class="bx bx-message-detail"></i> </span>
+            <h3>Messages</h3>
+            <span class="msgs-count">26</span>
+          </a>
+          <a href="#">
+            <span><i class="bx bx-newspaper"></i> </span>
+            <h3>Reports</h3>
+          </a>
+          <a href="#">
+            <span><i class="bx bx-cog"></i> </span>
+            <h3>Settings</h3>
+          </a>
+          <a href="#">
+            <span><i class="bx bx-plus"></i> </span>
+            <h3>Add Product</h3>
+          </a>
+        </div>
+      </aside>
+    </div>
+
+    <script type="module">
+      import "@material/web/all.js";
+      import { styles as typescaleStyles } from "@material/web/typography/md-typescale-styles.js";
+
+      document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
+  </body>
 </html>
